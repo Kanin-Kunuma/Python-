@@ -1,0 +1,42 @@
+"""2.1 简便写法"""
+min = eval(input("请输入最小范围:"))
+max = eval(input("请输入最大范围:"))
+print("有以下素数:")
+for scope in range(min + 1, max):
+    
+    for i in range(2, scope):
+        
+        if scope % 2 == 0:
+            
+            break
+        
+    else:
+        print(scope, end=",")
+
+
+""""2.2 函数写法"""
+def judge_prime_number(i):
+    flag = False
+    for j in range(2, i):
+        if i % j == 0:
+            flag = True
+            break 
+
+min = eval(input("请输入最小范围:"))
+max = eval(input("请输入最大范围:"))
+List = []
+
+for scope in range(min + 1, max):
+    if judge_prime_number(scope):
+        List.append(scope)
+
+for i in List:
+    print(i, end = ",")
+
+
+
+
+
+
+
+
