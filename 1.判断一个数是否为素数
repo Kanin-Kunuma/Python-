@@ -6,3 +6,7 @@
      if a % i == 0:
          flag = True
          break
+if flag:
+    print("不是素数")
+else:
+    print("是素数")
