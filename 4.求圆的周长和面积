@@ -1,0 +1,17 @@
+"""4.求圆的周长和面积"""
+import math
+
+r = eval(input("请输入圆的周长:"))
+choice = input("求周长(R)还是面积(S):")
+
+
+if choice == 'r' or choice == 'R':
+    R = math.pi * r * 2
+    print(f"圆的周长为:{round(R, 4)}")
+
+elif choice == 's' or choice == 'S':
+    S = math.pi * r ** 2
+    print(f"圆的面积为:{round(S, 4)}")
+
+else:
+    print("输入有误!")
