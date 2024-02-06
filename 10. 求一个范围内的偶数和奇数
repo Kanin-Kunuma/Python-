@@ -1,0 +1,16 @@
+"""9.1找出一个范围内的偶数或奇数"""
+
+def search_even_number(min, max):
+    
+    print("该范围内的偶数有:")
+    for i in range(min, max + 1):
+        if i % 2 == 0:
+            print(i, end = ",")
+
+
+def search_odd_number(min, max):
+    
+    print("该范围内的奇数有:")
+    for i in range(1, 21):
+        if i % 2 != 0:
+            print(i, end = ",")
