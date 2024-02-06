@@ -14,3 +14,8 @@ def search_odd_number(min, max):
     for i in range(1, 21):
         if i % 2 != 0:
             print(i, end = ",")
+min = eval(input("请输入一个最小范围:"))
+max = eval(input("请输入一个最大范围:"))
+search_even_number(min, max)
+print("\n")
+search_odd_number(min, max)
