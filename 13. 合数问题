@@ -1,0 +1,23 @@
+"""13.1 判断合数"""
+n = eval(input("请输入一个整数:"))
+count = 0
+for i in range(1, n):
+    if n % i == 0:
+        count += i
+        if count == n:
+            print(f"{n}是合数")
+
+else:
+    print(f"{n}不是合数")
+
+
+"""13.2 求一个范围内的合数"""
+
+for i in range(1, 1000):
+    count = 0
+    for j in range(1, i):
+        if i % j == 0:
+            count += j
+            
+    if count == i:
+        print(f"{i}是合数"
