@@ -1,0 +1,12 @@
+"""12.1 判断三角形"""
+a = eval(input("请输入第一条边:"))
+b = eval(input("请输入第二条边:"))
+c = eval(input("请输入第三条边:"))
+
+if a + b > c and a - b < c:
+    if a*a + b*b == c*c:
+        print("这三条边可以组成三角形,且为直角三角形")
+        
+    else:
+        print("这三条边可以组成三角形")
+    
