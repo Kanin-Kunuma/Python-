@@ -1,0 +1,23 @@
+
+"""14.1 找质数因子"""
+题目:输入一个正整数,输出它的所有质数因子(例如:180的质数因子为2 2 3 3 5)
+
+
+
+
+count = 2
+number = eval(input("请输入一个整数:"))
+List = [2]
+
+while number != count:
+    if number % count == 0:
+        
+        List.append(count)
+        number //= count
+        
+    else:
+        count += 1
+
+print(f"\n正整数{number}的质数因子有:")
+for i in List:
+    print(i, end = ",")
