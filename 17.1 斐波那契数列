@@ -1,0 +1,23 @@
+"""17.1 斐波那切数列(递归)"""
+def test(n):
+    if n == 1 or n == 2:
+        return 1
+    
+    else:
+        return test(n - 1) + test(n - 2)
+
+    
+List = [1,]
+Max = eval(input("请输入最大范围:"))
+for i in range(2, Max + 1):
+    List.append(test(i))
+print(List)
+
+
+"""17.2 斐波那契数列(非递归)"""
+Max = eval(input("请输入最大范围:"))
+fibs = [1, 1]
+for i in range(2, Max + 1):
+    fibs.append(fibs[i - 1] + fibs[i - 2])
+
+print(f"前n项的数列为:{fibs}")
