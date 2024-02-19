@@ -1,0 +1,8 @@
+"""16.1 判断某年某天(常规)"""
+print("输出示例如下")
+print("2022.6.6")
+judge = [eval (n) for n in input("请输入某年某月某日:").split(".")]
+
+if judge:
+     
+    print(f"{judge[1]}月{judge[2]}日是{judge[0]}年的第{(judge[1] - 1 ) * 30 + judge[2] }天")
