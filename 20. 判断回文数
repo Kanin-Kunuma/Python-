@@ -1,0 +1,26 @@
+"""20.1 判断回文数(运算法)"""
+# 回文数:个位与万位相同,十位与千位相同,12321就是一个回文数
+
+number = eval(input("请输入一个回文整数:"))
+wan = number//10000
+qian = number // 1000 % 10
+ban = number // 100 % 10
+shi = number % 100 // 10
+ge = number % 10
+
+if wan == ge and shi == qian:
+    print(f"数字{number}是一个回文数")
+
+else:
+    print(f"数字{number}不是回文数")
+
+
+"""20.2 判断回文数(字符串切片)"""
+number = input("请输入一个五位整数:")
+
+number_judge = number[::-1]
+if number == number_judge:
+    print(f"数字{number}是回文数")
+    
+else:
+    print(f"数字{number}不是回文数")
