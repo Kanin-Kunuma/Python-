@@ -1,0 +1,18 @@
+"""20.1 统计字符(常规操作)"""
+character = [ n for n in input("请输入一串字符(以空格分隔):").split(" ")]
+English_character = 0
+number = 0
+other = 0
+
+for i in character:
+    if i.isalpha():
+        English_character += 1
+        
+    elif i.isdigit():
+        number += 1
+        
+    else:
+        other += 1
+
+print("统计如下:")
+print(f"英文字母或汉字共有{English_character}个,数字有{number}个,其它字符有{other}个")
